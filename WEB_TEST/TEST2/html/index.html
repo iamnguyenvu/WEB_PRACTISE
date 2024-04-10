@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="container-sm" style="font-family: 'Times New Roman', Times, serif;">
+        <form action="">
+            <div class="row justify-content-center align-items-center" style="font-size: 28px; font-weight: bold; height: 100px;">
+                <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipUsername">Tên đăng nhập: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="text" name="ipUsername" id="ipUsername" class="form-control" placeholder="txtDN">
+                    </div>
+                    <span id="errUsername" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipPassword">Mật khẩu: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="password" name="ipPassword" id="ipPassword" class="form-control" placeholder="txtMK">
+                    </div>
+                    <span id="errPassword" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipRetypePassword">Nhập lại mật khẩu: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="password" name="ipRetypePassword" id="ipRetypePassword" class="form-control" placeholder="txtXNMK">
+                    </div>
+                    <span id="errRetypePassword" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" style=" font-weight: bold; height: 100px;">
+                <h3>THÔNG TIN CÁ NHÂN</h3>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipFullName">Họ và tên: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="text" name="ipFullName" id="ipFullName" class="form-control" placeholder="txtName">
+                    </div>
+                    <span id="errFullName" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipDate">Ngày sinh: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="date" id="ipDate" class="form-control">
+                    </div>
+                    <span id="errDate" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipGender" >Giới tính: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input class="col-4" type="radio" name="male" id="ipGender" value="male">
+                        <label for="ipGender">Nam</label>
+                        <input class="col-4" type="radio" name="female" id="ipGender" value="female">
+                        <label for="ipGender">Nữ</label>
+                    </div>
+                    <span id="errGender" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipAddress">Địa chỉ: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="text" id="ipAddress" class="form-control" placeholder="txtDC">
+                    </div>
+                    <span id="errAddress" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipPhoneNumber">Điện thoại: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="text" id="ipPhoneNumber" class="form-control" placeholder="txtDT">
+                    </div>
+                    <span id="errPhoneNumber" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <div class="text-left form-group row border-bottom" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <label class="col-3 col-form-label text-right" for="ipEmail">Email: </label>
+                <div class="col-9 row">
+                    <div class="col-7">
+                        <input type="text" id="ipEmail" class="form-control"  placeholder="txtEmail">
+                    </div>
+                    <span id="errEmail" class="col-5 text-left" style="color: red;">*</span>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="button-group row justify-content-center" style="font-size: 18px; font-weight: bold; padding-bottom: 10px;">
+                <button id="btnSubmit" type="submit" class="btn btn-dark">Đăng ký</button>
+                <button type="button" class="btn btn-dark" data-dismiss="modal" style="margin-left: 20px;">Hủy</button>
+            </div>
+        </form>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Thông báo</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p id="modalMessage"></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+</body>
+</html>
